@@ -1,0 +1,13 @@
+type: object 
+required: 
+  - decision
+  - details
+description: The assessment result
+properties: 
+  decision:
+    description: The recommended action based on the risk assessed
+    enum: [capture, flag, void]
+    example: capture
+  details:
+    description: List of triggered routing rules in order of execution
+    type: string

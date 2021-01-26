@@ -1,0 +1,21 @@
+type: object
+properties:
+  date:
+    description: The original payment attempt date
+    $ref: '#/components/schemas/Timestamp'
+  customer:
+    $ref: '#/components/schemas/Customer'
+  payment:
+    $ref: '#/components/schemas/RiskPayment'
+  shipping:
+    $ref: '#/components/schemas/Address'
+  billing:
+    $ref: '#/components/schemas/Address'
+  device:
+    $ref: '#/components/schemas/Device'
+  metadata:
+    $ref: '#/components/schemas/Metadata'
+  authentication_result: 
+    $ref: '#/components/schemas/AuthenticationResult'
+  authorization_result: 
+    $ref: '#/components/schemas/AuthorizationResult'
