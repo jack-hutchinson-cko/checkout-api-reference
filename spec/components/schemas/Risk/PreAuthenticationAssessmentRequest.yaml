@@ -7,9 +7,9 @@ properties:
     $ref: '#/components/schemas/Customer'
   payment:
     $ref: '#/components/schemas/RiskPayment'
-  shipping_address:
+  shipping:
     $ref: '#/components/schemas/Address'
-  billing_address:
+  billing:
     $ref: '#/components/schemas/Address'
   device:
     $ref: '#/components/schemas/Device'
