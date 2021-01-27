@@ -1,7 +1,6 @@
 type: object 
 required: 
   - decision
-  - details
 description: The assessment result
 properties: 
   decision:
@@ -9,5 +8,5 @@ properties:
     enum: [try_exemptions, try_frictionless, default_to3ds, force_challenge, decline]
     example: try_frictionless
   details:
-    description: List of triggered routing rules in order of execution
+    description: Explanation of the risk processing decsion
     type: string

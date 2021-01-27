@@ -1,7 +1,6 @@
 type: object 
 required: 
   - decision
-  - details
 description: The assessment result
 properties: 
   decision:

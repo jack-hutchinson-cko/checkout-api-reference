@@ -11,5 +11,5 @@ properties:
     description: How the decision was concluded
     type: array
     items:
-      enum: [DeclineListEmail, DeclineListBIN, DeclineListShipping, RoutingStrategy]
-      example: [DeclineListEmail, DeclineListBIN]
+      enum: [decline_list_email, decline_list_bin, decline_list_shipping, routing_strategy]
+      example: [decline_list_email, routing_strategy]

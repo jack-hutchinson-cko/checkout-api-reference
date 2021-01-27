@@ -3,10 +3,10 @@ get:
     - ApiSecretKey: []
   tags:
     - Risk
-  summary: Request an array of pre-authentication and pre-capture responses for a given risk assessment
+  summary: Get risk scans
   operationId: riskAssessments
   description: |
-    todo
+    Request an array of pre-authentication and pre-capture responses for a given risk assessment
   parameters:
     - in: path
       name: risk_assessment_id

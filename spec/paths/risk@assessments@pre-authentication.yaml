@@ -6,7 +6,7 @@ post:
   summary: Request a pre-authentication risk scan
   operationId: preAuthenticationRiskAssessment
   description: |
-   some nice description
+    Creates a risk assessment context and performs a pre-authentication risk scan resulting from the defined risk settings.
   parameters:
     - $ref: '#/components/parameters/ckoIdempotencyKey'
   requestBody:
@@ -14,7 +14,6 @@ post:
       application/json:
         schema:
           $ref: '#/components/schemas/PreAuthenticationAssessmentRequest'
-        # example:
   responses:
     '200':
       description: Transaction assessed successfully

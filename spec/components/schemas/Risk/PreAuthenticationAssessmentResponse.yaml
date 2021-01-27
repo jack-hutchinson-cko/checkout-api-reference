@@ -22,7 +22,7 @@ properties:
   result:
     description: The scan result based on the routing strategy
     allOf:
-      - $ref: '#/components/schemas/PreAuthResult'
+      - $ref: '#/components/schemas/PreAuthenticationResult'
   warning:
     description: Present when Checkout scan is more restrictive
     allOf:
