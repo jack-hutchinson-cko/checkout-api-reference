@@ -1,6 +1,6 @@
 type: object
 properties:
-  avs_result: 
+  avs_code: 
     type: string
     example: V
   cvv_result:

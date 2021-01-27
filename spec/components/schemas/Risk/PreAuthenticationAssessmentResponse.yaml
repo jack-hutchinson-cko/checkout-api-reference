@@ -8,11 +8,11 @@ properties:
   scan_id:
     type: string
     description: The unique id of the scan
-    example: "rsc_dze5fzef654zefzf"
+    example: "rsc_c5aqhf46pyzuxjbcn2giaqnb46"
   risk_assessment_id:
     type: string
     description: The correlation id across scans for a given transaction
-    example: "ras_d1eze3fef54re65f4er66"
+    example: "ras_c4oqhf46pyzuxjbcn2giaqnb44"
   score: 
     type: integer
     description: The risk score calculated by Checkout. Absent if not enough data provided.
@@ -20,7 +20,7 @@ properties:
     minimum: 0
     maximum: 100
   result:
-    description: The scan result based on the routing strategy
+    description: The scan result based on defined pre-authentication risk settings
     allOf:
       - $ref: '#/components/schemas/PreAuthenticationResult'
   warning:
@@ -36,7 +36,7 @@ properties:
           href:
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}"
       pre-capture:
-        description: Perform a pre-capture assessment using the same context
+        description: Perform a pre-capture assessment using the same context. Absent if no pre-capture risk settings configured
         properties:
           href:
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}/pre-capture"
