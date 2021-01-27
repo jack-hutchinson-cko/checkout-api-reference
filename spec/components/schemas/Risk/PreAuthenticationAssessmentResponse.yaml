@@ -12,7 +12,7 @@ properties:
   risk_assessment_id:
     type: string
     description: The correlation id across scans for a given transaction
-    example: "ras_d1eze3fef54re65f4er66"
+    example: "ras_c4oqhf46pyzuxjbcn2giaqnb44"
   score: 
     type: integer
     description: The risk score calculated by Checkout. Absent if not enough data provided.
