@@ -6,7 +6,7 @@ properties:
   decision:
     description: Checkout recommended decision
     enum: [capture, void, flag]
-    example: try_frictionless
+    example: capture
   reasons:
     description: How the decision was concluded
     type: array
