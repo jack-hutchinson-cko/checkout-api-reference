@@ -8,6 +8,7 @@ post:
   description: |
     Any object specified in the request is optional but is not needed if you pass the risk_assessment_id across the steps. If however specified, the assessment data will be patched
   parameters:
+    - $ref: '#/components/parameters/ckoIdempotencyKey'
     - in: path
       name: risk_assessment_id
       schema:
