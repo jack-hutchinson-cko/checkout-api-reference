@@ -6,7 +6,7 @@ description: The assessment result
 properties: 
   decision:
     description: The recommended action based on the risk assessed
-    enum: [try_exemptions, try_frictionless, default_to3ds, force_challenge, decline]
+    enum: [try_exemptions, try_frictionless, no_preference, force_challenge, decline]
     example: try_frictionless
   details:
     description: List of triggered routing rules in order of execution
