@@ -36,7 +36,7 @@ properties:
           href:
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}"
       pre-capture:
-        description: Perform a pre-capture assessment using the same context
+        description: Perform a pre-capture assessment using the same context. Absent if no pre-capture risk settings configured
         properties:
           href:
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}/pre-capture"
