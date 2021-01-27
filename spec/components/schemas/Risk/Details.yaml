@@ -3,7 +3,7 @@ description: List of triggered routing rules in order of execution
 properties: 
   id:
     type: string
-    example: rul_458784548431886453
+    example: rul_a3oqhf46pyzuxjbcn2giaqnb44
   name: 
     type: string
     example: High Risk Countries
