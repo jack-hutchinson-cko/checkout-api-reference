@@ -8,5 +8,5 @@ properties:
     enum: [capture, flag, void]
     example: capture
   details:
-    description: List of triggered routing rules in order of execution
+    description: Explanation of the risk processing decsion
     type: string
