@@ -12,11 +12,17 @@ properties:
   payment:
     $ref: '#/components/schemas/RiskPayment'
   shipping:
-    $ref: '#/components/schemas/Address'
+    description: The shipping address
+    allOf:
+      - $ref: '#/components/schemas/Address'
   billing:
-    $ref: '#/components/schemas/Address'
+    description: The billing address
+    allOf:
+      - $ref: '#/components/schemas/Address'
   device:
-    $ref: '#/components/schemas/Device'
+    description: Device data
+    allOf:
+      - $ref: '#/components/schemas/Device'
   metadata:
     $ref: '#/components/schemas/Metadata'
   authentication_result: 

@@ -28,4 +28,3 @@ properties:
     description: The method used to make the payment
     oneOf:
       - $ref: '#/components/schemas/CardInfo'
-      - $ref: '#/components/schemas/PhonePaymentInfo'

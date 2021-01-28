@@ -26,17 +26,21 @@ properties:
   warning:
     description: Present when Checkout scan is more restrictive
     allOf:
-      - $ref: '#/components/schemas/Warning'
+      - $ref: '#/components/schemas/PreAuthenticationWarning'
   _links:
     type: object
     properties:
       self:
-        description: The assessment retrieval uri
+        description: The URL of the assessment
         properties:
           href:
+            type: string
+            description: The link URL
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}"
       pre-capture:
-        description: Perform a pre-capture assessment using the same context. Absent if no pre-capture risk settings configured
+        description: A link to perform a pre-capture assessment using the same context. Absent if no pre-capture risk settings configured
         properties:
           href:
+            type: string 
+            description: The link URL
             example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}/pre-capture"
