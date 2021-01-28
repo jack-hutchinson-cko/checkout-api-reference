@@ -3,7 +3,7 @@ get:
     - ApiSecretKey: []
   tags:
     - Risk
-  summary: Get risk scans
+  summary: Get risk assessments
   operationId: riskAssessments
   description: |
     Request an array of pre-authentication and pre-capture responses for a given risk assessment
@@ -21,11 +21,7 @@ get:
       content:
         application/json:
           schema:
-            type: array
-            items:
-              anyOf:
-                - $ref: '#/components/schemas/PreAuthenticationAssessmentResponse'
-                - $ref: '#/components/schemas/PreCaptureAssessmentResponse'
+            $ref: '#/components/schemas/GetRiskAssessmentsResponse'
         Cko-Request-Id:
           $ref: "#/components/headers/Cko-Request-Id"
         Cko-Version:
