@@ -7,7 +7,7 @@ properties:
     example: "Checkout.com"
   id:
     type: string
-    description: "A user defined payment id"
+    description: "The PSP's transaction identifier. Can be back-filled at a later step, e.g /pre-capture"
     example: "78453878"
     maxLength: 32
   amount:
