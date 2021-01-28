@@ -1,7 +1,7 @@
 type: object
 properties:
   ip:
-    description: The IP address used to make the payment
+    description: The IP V4 address used to make the payment
     allOf:
       - $ref: '#/components/schemas/IPAddress'
   location:

@@ -3,8 +3,8 @@ get:
     - ApiSecretKey: []
   tags:
     - Risk
-  summary: Get risk assessments
-  operationId: riskAssessments
+  summary: Get risk assessment
+  operationId: getRiskAssessment
   description: |
     Request an array of pre-authentication and pre-capture responses for a given risk assessment
   parameters:
@@ -29,6 +29,6 @@ get:
     '401':
       description: Unauthorized
     '404':
-      description: risk_assessment_id not found
+      description: Assessment not found
     '502':
       description: Bad gateway
