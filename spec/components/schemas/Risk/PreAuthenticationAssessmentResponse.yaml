@@ -1,14 +1,9 @@
 type: object
 description: Pre-Authentication Response
 required:
-  - scan_id
   - risk_assessment_id
   - result
 properties:
-  scan_id:
-    type: string
-    description: The unique id of the scan
-    example: "rsc_c5aqhf46pyzuxjbcn2giaqnb46"
   risk_assessment_id:
     type: string
     description: The correlation id across scans for a given transaction
