@@ -1,5 +1,9 @@
 type: object
 properties:
+  risk_assessment_id:
+    type: string
+    pattern: "^(ras)_(\\w{26})$"
+    description: The risk assessment identifier returned in the /pre-authentication response
   date:
     description: The original payment attempt date
     $ref: '#/components/schemas/Timestamp'
