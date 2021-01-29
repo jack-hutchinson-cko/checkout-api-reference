@@ -20,6 +20,10 @@ properties:
     description: The device model
     type: string
     example: iPhone X
+  date_time:
+    description: The device's date and time as an ISO 8601 timestamp.
+    allOf: 
+      - $ref: '#/components/schemas/Timestamp'
   user_agent: 
     description: The device's user-agent
     type: string 

@@ -1,8 +1,9 @@
 type: object
 properties:
   date:
-    description: The original payment attempt date
-    $ref: '#/components/schemas/Timestamp'
+    description: An ISO 8601 timestamp of the date of the original payment attempt
+    allOf: 
+      - $ref: '#/components/schemas/Timestamp'
   customer:
     $ref: '#/components/schemas/Customer'
   payment:
