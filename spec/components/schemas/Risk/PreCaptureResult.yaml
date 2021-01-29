@@ -1,21 +1,16 @@
-type: object
-properties:
-  date:
-    description: The original payment attempt date
-    $ref: '#/components/schemas/Timestamp'
-  customer:
-    $ref: '#/components/schemas/Customer'
-  payment:
-    $ref: '#/components/schemas/RiskPayment'
-  shipping:
-    $ref: '#/components/schemas/Address'
-  billing:
-    $ref: '#/components/schemas/Address'
-  device:
-    $ref: '#/components/schemas/Device'
-  metadata:
-    $ref: '#/components/schemas/Metadata'
-  authentication_result: 
-    $ref: '#/components/schemas/AuthenticationResult'
-  authorization_result: 
-    $ref: '#/components/schemas/AuthorizationResult'
+type: object 
+required: 
+  - decision
+description: The assessment result
+properties: 
+  decision:
+    type: string
+    description: The recommended action based on the risk assessed
+    enum: 
+    - capture
+    - flag
+    - void
+    example: capture
+  details:
+    description: Explanation of the risk processing decsion
+    type: string 

@@ -4,12 +4,22 @@ required:
   - reasons
 properties: 
   decision:
-    description: Checkout recommended decision
-    enum: [try_exemptions, try_frictionless, no_preference, force_challenge, decline]
+    type: string
+    description: The resulting decision based on pre-authentication risk settings
+    enum: 
+    - try_exemptions
+    - try_frictionless
+    - no_preference
+    - force_challenge
+    - decline
     example: try_frictionless
   reasons:
     description: How the decision was concluded
     type: array
     items:
-      enum: [decline_list_email, decline_list_bin, decline_list_shipping, routing_strategy]
+      enum: 
+      - decline_list_email 
+      - decline_list_bin
+      - decline_list_shipping
+      - routing_strategy]
       example: [decline_list_email, decline_list_shipping]

@@ -32,7 +32,9 @@ properties:
     maxLength: 4
   scheme:
     type: string
-    enum: [Mastercard, Visa]
+    enum: 
+    - Mastercard
+    - Visa
     description: The card scheme
     example: VISA
   card_type:
