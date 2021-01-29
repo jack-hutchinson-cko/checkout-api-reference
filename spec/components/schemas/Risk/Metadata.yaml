@@ -3,6 +3,6 @@ description: Allows you to attach additional information about a transaction wit
 additionalProperties:
   type: string
 example:
-  VoucherCode: "LOYALTY10"
+  VoucherCode: "loyalty_10"
   DiscountApplied: "10"
   CustomerId: "2190EF321"
