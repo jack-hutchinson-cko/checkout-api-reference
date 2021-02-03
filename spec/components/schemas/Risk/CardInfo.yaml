@@ -50,3 +50,11 @@ properties:
     type: string
     description: The payment method type
     example: card
+  billing_address:
+    description: The billing address of the cardholder
+    allOf:
+      - $ref: '#/components/schemas/Address'
+  phone:
+    description: The phone number of the cardholder
+    allOf:
+      - $ref: '#/components/schemas/PhoneNumber'

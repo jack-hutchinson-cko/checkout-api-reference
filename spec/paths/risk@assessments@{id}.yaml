@@ -9,7 +9,7 @@ get:
     Request an array of pre-authentication and pre-capture responses for a given risk assessment
   parameters:
     - in: path
-      name: risk_assessment_id
+      name: assessment_id
       schema:
         type: string
         pattern: "^(ras)_(\\w{26})$"

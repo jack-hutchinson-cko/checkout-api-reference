@@ -4,6 +4,8 @@ properties:
     description: An ISO 8601 timestamp of the date of the original payment attempt
     allOf: 
       - $ref: '#/components/schemas/Timestamp'
+  source: 
+    $ref: '#/components/schemas/RiskPaymentRequestSource'
   customer:
     $ref: '#/components/schemas/Customer'
   payment:
