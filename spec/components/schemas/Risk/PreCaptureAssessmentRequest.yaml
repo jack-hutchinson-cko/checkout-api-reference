@@ -29,9 +29,9 @@ properties:
   payment:
     $ref: '#/components/schemas/RiskPayment'
   shipping:
-    description: The shipping address
+    description: The shipping details
     allOf:
-      - $ref: '#/components/schemas/Address'
+      - $ref: '#/components/schemas/RiskShippingDetails'
   device:
     description: Device data
     allOf:

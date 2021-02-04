@@ -9,5 +9,3 @@ properties:
     type: string
     description: "The customer's email address"
     example: "john.doe@checkout.com"
-  phone: 
-    $ref: '#/components/schemas/Phone'

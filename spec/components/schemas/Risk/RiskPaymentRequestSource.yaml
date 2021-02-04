@@ -3,7 +3,7 @@ description: The source of the payment.<br>
 discriminator:
   propertyName: type
   mapping:
-    card: '#/components/schemas/CardInfo'
+    card: '#/components/schemas/03_PaymentRequestCardSource'
 required:
   - type
 properties:

@@ -11,9 +11,19 @@ properties:
   payment:
     $ref: '#/components/schemas/RiskPayment'
   shipping:
-    description: The shipping address
+    description: The shipping details
     allOf:
-      - $ref: '#/components/schemas/Address'
+      - $ref: '#/components/schemas/RiskShippingDetails'
+  reference:
+    type: string
+    description: A reference you can later use to identify this assessment, such as an order number.
+    maxLength: 50
+    example: "ORD-1011-87AH"
+  description:
+    type: string
+    description: A description
+    maxLength: 100
+    example: "Set of 3 masks"
   amount:
     type: integer
     description: |
