@@ -16,3 +16,4 @@ properties:
     type: array
     items:
       type: string
+    example: [rule_low_risk_postal_address]

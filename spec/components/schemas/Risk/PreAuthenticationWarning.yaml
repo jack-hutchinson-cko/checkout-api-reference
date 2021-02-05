@@ -18,4 +18,4 @@ properties:
     type: array
     items:
       type: string
-      example: [decline_list_email, decline_list_shipping]
+    example: [decline_list_email, decline_list_shipping]
