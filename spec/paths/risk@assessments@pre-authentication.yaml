@@ -15,7 +15,7 @@ post:
         schema:
           $ref: '#/components/schemas/PreAuthenticationAssessmentRequest'
   responses:
-    '200':
+    '201':
       description: Transaction assessed successfully
       content:
         application/json:

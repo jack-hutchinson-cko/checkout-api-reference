@@ -16,3 +16,4 @@ properties:
   details:
     description: Explanation of the risk processing decsion
     type: string
+    example: "low_value_item_rule"

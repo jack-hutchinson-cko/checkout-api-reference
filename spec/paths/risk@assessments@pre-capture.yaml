@@ -15,7 +15,7 @@ post:
         schema:
           $ref: '#/components/schemas/PreCaptureAssessmentRequest'
   responses:
-    '200':
+    '201':
       description: Transaction assessed successfully
       content:
         application/json:

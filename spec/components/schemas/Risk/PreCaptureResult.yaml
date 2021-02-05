@@ -13,4 +13,5 @@ properties:
     example: capture
   details:
     description: Explanation of the risk processing decsion
-    type: string 
+    type: string
+    example: "risk_profile_1"
