@@ -20,7 +20,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/PreCaptureAssessmentResponse'
+            $ref: '#/components/schemas/PreAuthenticationAssessmentResponse'
         Cko-Request-Id:
           $ref: "#/components/headers/Cko-Request-Id"
         Cko-Version:
