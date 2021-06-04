@@ -7,8 +7,8 @@ post:
   operationId: preCaptureRiskAssessment
   description: |
     Any object specified in the request is optional but is not needed if you pass the assessment_id across the steps. If however specified, the assessment data will be patched
-  parameters:
-    - $ref: '#/components/parameters/ckoIdempotencyKey'
+  # parameters:
+  #   - $ref: '#/components/parameters/ckoIdempotencyKey'
   requestBody:
     content:
       application/json:

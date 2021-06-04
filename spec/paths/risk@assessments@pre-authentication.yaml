@@ -7,24 +7,24 @@ post:
   operationId: preAuthenticationRiskAssessment
   description: |
     Creates a risk assessment context and performs a pre-authentication risk scan resulting from the defined risk settings.
-  parameters:
-    - $ref: '#/components/parameters/ckoIdempotencyKey'
+  #parameters:
+   # - $ref: '#/components/parameters/ckoIdempotencyKey'
   requestBody:
     content:
       application/json:
         schema:
           $ref: '#/components/schemas/PreAuthenticationAssessmentRequest'
   responses:
-    '200':
-      description: Transaction already assessed
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/PreAuthenticationAssessmentResponse'
-        Cko-Request-Id:
-          $ref: "#/components/headers/Cko-Request-Id"
-        Cko-Version:
-          $ref: "#/components/headers/Cko-Version"
+  #   '200':
+  #     description: Transaction already assessed
+  #     content:
+  #       application/json:
+  #         schema:
+  #           $ref: '#/components/schemas/PreAuthenticationAssessmentResponse'
+  #       Cko-Request-Id:
+  #         $ref: "#/components/headers/Cko-Request-Id"
+  #       Cko-Version:
+  #         $ref: "#/components/headers/Cko-Version"
     '201':
       description: Transaction assessed successfully
       content:
