@@ -29,7 +29,7 @@ jobs:
               
       - name: Delete non-Prism files
         shell: bash
-        run: find 'spec/*/**' -type f \! -iname '*risk*' -delete
+        run: find 'spec' -type f \! -iname '*risk*' -delete
         
       - name: List spec contents
         shell: bash
