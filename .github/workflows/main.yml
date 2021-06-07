@@ -5,7 +5,7 @@ name: Creates a PR for Prism's changes in documentation around 'risk'
 on:
   push:
     branches:
-      - test-branch-name
+      - '*'
 
 jobs:
   upload-spec:
