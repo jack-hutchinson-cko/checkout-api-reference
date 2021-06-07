@@ -25,8 +25,12 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: specification
-          path: spec/
-          
+          path: spec/       
+              
+      - name: Delete non-Prism files
+        shell: bash
+        run: find 'spec' -type f \! -iname '*risk*' -delete
+        
       - name: List spec contents
         shell: bash
         run: ls spec/*/**
