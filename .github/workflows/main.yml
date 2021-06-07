@@ -21,11 +21,16 @@ jobs:
           persist-credentials: true
           repository: cko-prism/checkout-api-reference
           ref: ${{ steps.extract_branch.outputs.branch }}
-      
+         
       - uses: actions/upload-artifact@v2
         with:
           name: specification
           path: spec/
+          
+      - name: List spec contents
+        shell: bash
+        run: echo "ls spec"
+        id: list_spec_contents
         
   publish-spec:
     runs-on: ubuntu-latest
