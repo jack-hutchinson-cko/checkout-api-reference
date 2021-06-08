@@ -28,13 +28,13 @@ jobs:
           path: spec/       
               
       - name: Delete non-Prism files
-        shell: bash
-        run: find 'spec' -type f \! -iname '*risk*' -delete
-        
-      - name: List spec contents
-        shell: bash
-        run: ls spec/*/**
-        id: list_spec_contents
+        run: |
+          ls spec/*/**
+          find 'spec' -type f \! -iname '*risk*'
+          find 'spec' -type f \! -iname '*risk*' -delete
+          find 'spec' -type d -empty -print
+          find 'spec' -type d -empty -delete
+          ls spec/*/**
         
   publish-spec:
     runs-on: ubuntu-latest
