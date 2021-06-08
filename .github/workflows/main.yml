@@ -20,12 +20,7 @@ jobs:
         with:
           persist-credentials: true
           repository: cko-prism/checkout-api-reference
-          ref: ${{ steps.extract_branch.outputs.branch }}
-         
-      - uses: actions/upload-artifact@v2
-        with:
-          name: specification
-          path: spec/       
+          ref: ${{ steps.extract_branch.outputs.branch }}                   
               
       - name: Delete non-Prism files
         run: |
@@ -42,6 +37,11 @@ jobs:
           echo ********** Listing contents of spec/ ************
           ls spec/*/**
           echo ********** Ready to upload specs ************
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: specification
+          path: spec/
         
   publish-spec:
     runs-on: ubuntu-latest
