@@ -57,7 +57,7 @@ jobs:
         with:
           repository: checkout/checkout-api-reference
           ref: development
-          token: ${{ secrets.PRISM_DEV_GITHUB_ACCESS_TOKEN }}
+          token: ${{ secrets.PRISM_DOCS_POC_PAT }}
           path: src
           
       - name: Commit Api specification
@@ -71,7 +71,7 @@ jobs:
           git push origin HEAD
       - uses: actions/github-script@v4
         with:
-          github-token: ${{secrets.PRISM_DEV_GITHUB_ACCESS_TOKEN}}
+          github-token: ${{secrets.PRISM_DOCS_POC_PAT}}
           script: |
             await github.pulls.create({
               owner: 'checkout',
