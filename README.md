@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/checkout/checkout-api-reference.svg?branch=master)](https://travis-ci.org/checkout/checkout-api-reference)
 
 ## Links 
-
+ 
 - Documentation: https://api-reference.checkout.com
 - SwaggerUI: https://api-reference.checkout.com/swagger-ui/
 - Look full spec:
