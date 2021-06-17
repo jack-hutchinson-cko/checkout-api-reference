@@ -26,16 +26,17 @@ jobs:
         run: |
           echo ********** Listing contents of spec/ ************
           ls spec/*/**
-          echo ********** Finding all non-risk related files to delete ************
-          find 'spec' -type f \! -iname '*risk*'
-          echo ********** Deleting all non-risk related files ************
-          find 'spec' -type f \! -iname '*risk*' -delete
-          echo ********** Finding all empty directories to delete ************
-          find 'spec' -type d -empty -print
-          find 'spec' -type d -empty -delete
-          echo ********** Deleted all empty directories ************
+          echo ********** Created an empty folder ************
+          mkdir newspec
+          echo ********** Copying over what we need into the new folder ************
+          mkdir -p newspec/components/schemas
+          cp -r spec/components/schemas/Risk newspec/components/schemas             
+          echo ********** Delete spec folder ************             
+          rm -f spec
+          echo ********** Rename newspec to spec ************   
+          mv newspec spec
           echo ********** Listing contents of spec/ ************
-          ls spec/*/**
+          ls spec/*/**          
           echo ********** Ready to upload specs ************
           
       - uses: actions/upload-artifact@v2
