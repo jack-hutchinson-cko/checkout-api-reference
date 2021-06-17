@@ -31,18 +31,14 @@ jobs:
           echo ********** Copying over what we need into the new folder ************
           mkdir -p newspec/components/schemas
           cp -r spec/components/schemas/Risk newspec/components/schemas             
-          echo ********** Delete spec folder ************             
-          rm -f spec
-          echo ********** Rename newspec to spec ************   
-          mv newspec spec
-          echo ********** Listing contents of spec/ ************
+          echo ********** Listing contents of newspec/ ************
           ls spec/*/**          
           echo ********** Ready to upload specs ************
           
       - uses: actions/upload-artifact@v2
         with:
           name: specification
-          path: spec/
+          path: newspec/
         
   publish-spec:
     runs-on: ubuntu-latest
