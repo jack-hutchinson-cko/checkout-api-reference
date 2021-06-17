@@ -30,7 +30,9 @@ jobs:
           mkdir newspec
           echo ********** Copying over what we need into the new folder ************
           mkdir -p newspec/components/schemas
-          cp -r spec/components/schemas/Risk newspec/components/schemas             
+          cp -r spec/components/schemas/Risk newspec/components/schemas
+          mkdir -p newspec/paths
+          cp spec/paths/risk*.* newspec/paths          
           echo ********** Listing contents of newspec/ ************
           ls spec/*/**          
           echo ********** Ready to upload specs ************
