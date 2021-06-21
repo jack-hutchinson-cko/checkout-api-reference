@@ -6,9 +6,9 @@ post:
   summary: Request a pre-capture risk scan
   operationId: preCaptureRiskAssessment
   description: |
-    Any object specified in the request is optional but is not needed if you pass the risk_assessment_id across the steps. If however specified, the assessment data will be patched
-  parameters:
-    - $ref: '#/components/parameters/ckoIdempotencyKey'
+    Any object specified in the request is optional but is not needed if you pass the assessment_id across the steps. If however specified, the assessment data will be patched
+  # parameters:
+  #   - $ref: '#/components/parameters/ckoIdempotencyKey'
   requestBody:
     content:
       application/json:
@@ -16,6 +16,16 @@ post:
           $ref: '#/components/schemas/PreCaptureAssessmentRequest'
   responses:
     '200':
+      description: Transaction already assessed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PreCaptureAssessmentResponse'
+        Cko-Request-Id:
+          $ref: "#/components/headers/Cko-Request-Id"
+        Cko-Version:
+          $ref: "#/components/headers/Cko-Version"
+    '201':
       description: Transaction assessed successfully
       content:
         application/json:

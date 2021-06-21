@@ -1,5 +1,7 @@
 type: object 
 description: Details of the pre-capture response
+required:
+  - result
 properties:
   score: 
     type: integer

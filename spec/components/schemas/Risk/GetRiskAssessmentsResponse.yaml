@@ -1,6 +1,6 @@
 type: object
 properties:
-  risk_assessment_id:
+  assessment_id:
     type: string
     description: The correlation id across scans for a given transaction
     example: "ras_c4oqhf46pyzuxjbcn2giaqnb44"

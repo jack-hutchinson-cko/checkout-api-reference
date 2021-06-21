@@ -1,10 +1,10 @@
 type: object
 description: Pre-Capture Response
 required:
-  - risk_assessment_id
+  - assessment_id
   - result
 properties:
-  risk_assessment_id:
+  assessment_id:
     type: string
     description: The correlation id across scans for a given transaction
     example: "ras_c4oqhf46pyzuxjbcn2giaqnb44"
@@ -25,4 +25,4 @@ properties:
           href:
             type: string
             description: The link URL
-            example: "https://api.checkout.com/risk/assessments/{risk_assessment_id}"
+            example: "https://api.checkout.com/risk/assessments/{assessment_id}"
