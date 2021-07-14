@@ -2,10 +2,7 @@
 
 name: Creates a PR for Demo's changes in documentation around 'demo'
 
-on:
-  push:
-    branches:      
-      - 'main'  
+on: [pull_request]
 
 jobs:
   upload-spec:
@@ -22,7 +19,7 @@ jobs:
           repository: jack-hutchinson-cko/checkout-api-reference
           ref: ${{ steps.extract_branch.outputs.branch }}                   
               
-      - name: Delete non-Prism files
+      - name: Delete non-Demo files
         run: |
           echo ********** Listing contents of spec/ ************
           ls spec/*/**
