@@ -2,7 +2,10 @@
 
 name: Creates a PR for Demo's changes in documentation around 'demo'
 
-on: [pull_request]
+on:
+  push:
+    branches:      
+      - 'main'  
 
 jobs:
   upload-spec:
